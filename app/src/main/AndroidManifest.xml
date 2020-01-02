@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exarcplus.foodzeetest2">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".NavDraw.HomeActivity.HomeScreen.MyCart.Checkout.AlertDialogCheckoutStep1Activity"
+            android:theme="@style/Theme.Transparent">
+        </activity>
+        <activity android:name=".NavDraw.TermsAndConditionsActivity.TermsAndConditionsActivity" />
+        <activity android:name=".NavDraw.SupportActivity.SupportActivity" />
+        <activity android:name=".NavDraw.WishlistActivity.WishlistActivity" />
+        <activity android:name=".NavDraw.MyProfileActivity.MyProfileActivity" >
+
+        </activity>
+        <activity android:name=".NavDraw.MyOrdersActivity.MyOrdersActivity" />
+        <activity android:name=".NavDraw.HomeActivity.HomeScreen.HomeActivity">
+
+        </activity>
+        <activity android:name=".NavDraw.NotificationsActivity.NotificationsActivity" />
+        <activity android:name=".NavDraw.HomeActivity.FreshItemsViewAll.FreshItemViewAllActivity" />
+        <activity android:name=".NavDraw.HomeActivity.BeveragesViewAll.BeveragesViewAllActivity" />
+        <activity android:name=".NavDraw.HomeActivity.HomeScreen.MyCart.Checkout.CheckoutStep2Activity" />
+        <activity android:name=".NavDraw.HomeActivity.HomeScreen.MyCart.Checkout.CheckoutStep1Activity" >
+
+        </activity>
+        <activity android:name=".NavDraw.HomeActivity.HomeScreen.MyCart.MyCartActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".location.LocationActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".splashscreen.SplashScreenActivity"
+            android:theme="@style/AppTheme1" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".location.MapsActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".login_register.PreLoginActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".login_register.LoginActivity.LoginActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".login_register.SignUpActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".login_register.ForgotPasswordActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".NavDraw.HomeActivity.HomeScreen.SearchView.SearchViewActivity"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".NavDraw.HomeActivity.HomeScreen.SecondFreshItems.SecondFreshItemActivity"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".NavDraw.HomeActivity.HomeScreen.SecondBeverages.SecondBeveragesActivity"
+            android:theme="@style/AppTheme3" />
+        <activity android:name=".NavDraw.MyProfileActivity.MyProfileEditActivity.MyProfileEditActivity" />
+        <activity android:name=".NavDraw.MyProfileActivity.MyProfileEditActivity.ImagePickerActivity" /> <!-- uCrop cropping activity -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- cache directory file provider paths -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

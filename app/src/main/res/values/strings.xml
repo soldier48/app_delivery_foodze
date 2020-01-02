@@ -1,0 +1,184 @@
+<resources>
+    <string name="app_name">FOODZEE</string>
+    <string name="searchbar_location">Your current location...</string>
+
+    <string name="get_location">Get my location</string>
+    <string name="submit_location">Submit my location</string>
+    <string name="address_text">"%1$s"</string>
+    <string name="no_address">Cannot retrieve address at this time</string>
+    <string name="location_permission_denied">Location permission denied. Current location unavailable.</string>
+
+
+    <!--///// activity_location /////-->
+
+    <string name="location_motto">It helps us in order to identify and shows food that hotels and restaurants make near you</string>
+
+
+    <!--///// activity_login /////-->
+
+    <string name="login_title">LOGIN</string>
+    <string name="login_motto">Order and Eat Good Food from Your Doorstep!</string>
+    <string name="email_login">Email Address</string>
+    <string name="password_login">Password</string>
+    <string name="login_to_foodzee_signup">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="newuser">New User?</string>
+    <string name="signup_screen">Sign Up</string>
+
+
+    <string name="error_invalid_password">Error Invalid Password</string>
+
+    <string name="error_field_required">Error Field Required</string>
+
+    <string name="error_invalid_email">Error Invalid Email</string>
+
+    <string name="prompt_email">Prompt Email</string>
+
+    <string name="prompt_password">Prompt Password</string>
+
+    <string name="action_sign_in_short">Sign In Short</string>
+
+    <string name="action_sign_in">Sign In</string>
+
+
+    <!--///// activity_sign_up /////-->
+
+    <string name="signup_title">SIGN UP</string>
+    <string name="username_signup">Username</string>
+    <string name="email_signup">Email Address</string>
+    <string name="mobilenumber_signup">Mobile Number</string>
+    <string name="password_signup">Password</string>
+    <string name="confirmpassword_signup">Confirm Password</string>
+    <string name="signup_to_foodzee_signup">Submit</string>
+    <string name="currentuser">Have an Account?</string>
+    <string name="login_screen">Login</string>
+
+
+    <!--///// activity_forgot_password /////-->
+
+    <string name="just_a_few_minutes">Just a few minutes!</string>
+    <string name="details_for_password_reset">Please enter your registered email id to get password reset instructions</string>
+    <string name="email_forgot_password">Email Address</string>
+    <string name="didntreceiveemail">Didn\'t receive email?</string>
+    <string name="resend_email">RESEND</string>
+    <string name="submit_forgot_password">SUBMIT</string>
+
+
+    <!--///// NavDrawActivity /////-->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+
+    <!-- Navigation Drawer menu labels -->
+
+    <string name="nav_home">Home</string>
+    <string name="nav_myorders">My Orders</string>
+    <string name="nav_wishlist">Wishlist</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_myprofile">My Profile</string>
+    <string name="nav_support">Support</string>
+    <string name="nav_termsandconditions">Terms and Conditions</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>My Orders</item>
+        <item>Wishlist</item>
+        <item>Notifications</item>
+        <item>My Profile</item>
+        <item>Support</item>
+        <item>Terms and Conditions</item>
+    </string-array>
+
+    <string name="action_clear_all">Clear All</string>
+
+
+    <!--///// fragment_home /////-->
+
+    <string name="searchbar_home">What would you like to eat now...</string>
+    <string name="special_offers_near_you">Special Offers Near You</string>
+    <string name="fresh_items">FRESH ITEMS</string>
+    <string name="beverages">BEVERAGES</string>
+    <string name="view_all">View all</string>
+
+
+    <!--///// fragment_term_and_conditions /////-->
+
+    <string name="general_roles_and_responsibilities"> Lorem ipsum dolor sit amet, dicam verterem has et, wisi imperdiet usu ex, ius accusata erroribus te. Harum altera cu duo, his sint lorem blandit et. Qui magna iusto cu, pri equidem minimum appareat id. Movet verterem eam id. Evertitur intellegam disputationi has ei, eam homero inciderint ei, mucius ceteros deleniti et per.</string>
+    <string name="term"> Lorem ipsum dolor sit amet, dicam verterem has et, wisi imperdiet usu ex, ius accusata erroribus te. Harum altera cu duo, his sint lorem blandit et. Qui magna iusto cu, pri equidem minimum appareat id. Movet verterem eam id. Evertitur intellegam disputationi has ei, eam homero inciderint ei, mucius ceteros deleniti et per. Usu te suas dicta aliquam, eam at evertitur interpretaris, zril sensibus at eum. Tempor fierent quo cu. Te aliquid copiosae scriptorem eum, mazim rationibus ei nec, ut sale dicta vim. Has ei dictas complectitur. Ei qui libris possit. </string>
+    <string name="customers_responsibilities"> Lorem ipsum dolor sit amet, dicam verterem has et, wisi imperdiet usu ex, ius accusata erroribus te. Harum altera cu duo, his sint lorem blandit et. Qui magna iusto cu, pri equidem minimum appareat id. Movet verterem eam id. Evertitur intellegam disputationi has ei, eam homero inciderint ei, mucius ceteros deleniti et per. Usu te suas dicta aliquam, eam at evertitur interpretaris, zril sensibus at eum. Tempor fierent quo cu. Te aliquid copiosae scriptorem eum, mazim rationibus ei nec, ut sale dicta vim. Has ei dictas complectitur. Ei qui libris possit. Impedit iudicabit philosophia ea his, ex justo debitis voluptatibus eam. Tibique detracto est ad. Ex sumo quidam nominati usu, idque commune eam eu, malorum eruditi ea nam. Eu eius disputationi eos, has et quod tollit accumsan. Illum meliore theophrastus cu has. Munere honestatis ex pri, usu ut torquatos moderatius interpretaris. Ad eam porro admodum.</string>
+
+
+    <!--///// fragment_my_profile /////-->
+
+    <string name="textName">Andrew Khremer</string>
+    <string name="textEmail">andrew234@gmail.com</string>
+    <string name="mobile_text">Mobile Number</string>
+    <string name="mobile_number">+91 9875839423</string>
+    <string name="address_name">My Address</string>
+    <string name="address_address">No.4, ITI Layout, Kathriguppe main road, Banashankari 3rd stage, Bengaluru, Karnataka, India.</string>
+    <string name="share_button">Share this app with friends</string>
+    <string name="update_button">UPDATE PROFILE</string>
+
+
+    <!--///// MyProfileEditActivity /////-->
+
+    <string name="error_invalid_username">Error Invalid Username</string>
+    <string name="error_invalid_mobile_number">Error Invalid Mobile Number</string>
+    <string name="error_invalid_address">Error Invalid Address</string>
+
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+
+    <!--///// Wishlist /////-->
+
+    <string name="searchbar_wishlist">All the items you have liked</string>
+
+
+    <!--///// MyCart /////-->
+
+    <string name="mycart">MYCART</string>
+    <string name="proceedtocheckout">PROCEED TO CHECKOUT</string>
+    <string name="totalamount">Total Amount</string>
+    <string name="deliverycharges">Delivery Charges</string>
+    <string name="totalpayableamount">Total Payable Amount</string>
+
+    <!--///// Checkout /////-->
+
+    <string name="checkout">CHECKOUT</string>
+    <string name="deliveryaddress">Select Delivery Address</string>
+    <string name="addnew">ADD NEW</string>
+    <string name="dots">..........</string>
+    <string name="continuetocheckout">CONTINUE TO CHECKOUT</string>
+    <string name="helloandrew">Hello! Andrew</string>
+    <string name="orderconfirmedtext">Your order has been confirmed. Go to my orders to see order status</string>
+    <string name="gotomyorders">Go to My Orders</string>
+
+    <!--///// MyOrders /////-->
+
+    <string name="orderid">FAIZIA00439</string>
+    <string name="ordertime">Sun 3, JUNE 2019 | 2:30 PM</string>
+    <string name="deliverytime">1:20 PM</string>
+    <string name="rateandreview">RATE &amp; REVIEW</string>
+
+    <string name="itemname">Carrot Halwa and Pudhina Fry</string>
+    <string name="itemnumber">(Item 1)</string>
+    <string name="itemprice">$23</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

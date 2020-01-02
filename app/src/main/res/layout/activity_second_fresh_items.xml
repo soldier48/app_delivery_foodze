@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_fresh_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".NavDraw.HomeActivity.HomeScreen.HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layoutDirection="ltr"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backtopreviouspage"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.1"
+                android:src="@drawable/ic_arrow_back2" />
+
+            <TextView
+                android:id="@+id/location_home"
+                android:layout_width="100dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="65dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:gravity="center|center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/fresh_items"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="vertical">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="3dp"
+                            app:cardUseCompatPadding="true">
+
+                            <ImageView
+                                android:id="@+id/selectedImage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/home_freshitem1" />
+
+                            <ImageView
+                                android:id="@+id/prelike"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginStart="330dp"
+                                android:layout_marginTop="10dp"
+                                app:srcCompat="@drawable/ic_prelike" />
+                            <ImageView
+                                android:id="@+id/like"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginStart="330dp"
+                                android:layout_marginTop="10dp"
+                                android:visibility="invisible"
+                                app:srcCompat="@drawable/ic_like" />
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="5dp"
+                            app:layout_constraintEnd_toEndOf="parent">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="25dp">
+
+                                    <TextView
+                                        android:id="@+id/selectedName"
+                                        android:layout_width="300dp"
+                                        android:layout_height="25dp"
+                                        android:fontFamily="@font/sf_pro_display_bold"
+                                        android:text="Italian Chova with Onion Manjuri"
+                                        android:textSize="15sp"
+                                        android:textStyle="bold"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <ImageView
+                                        android:id="@+id/imageView5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:src="@drawable/rating_star"
+                                        app:layout_constraintEnd_toStartOf="@+id/textView3"
+                                        app:layout_constraintHorizontal_bias="1.0"
+                                        app:layout_constraintStart_toEndOf="@+id/selectedName"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="30dp"
+                                        android:layout_height="25dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:text="4.0"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="75dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayout3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="25dp"
+                                        android:orientation="vertical"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent">
+
+                                        <TextView
+                                            android:id="@+id/textView4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="25dp"
+                                            android:drawableLeft="@drawable/food_corner"
+                                            android:drawablePadding="8dp"
+                                            android:fontFamily="@font/sf_pro_display_regular"
+                                            android:gravity="center_vertical"
+                                            android:text="Italian Food Corner"
+                                            android:textColor="@color/colorPrimary" />
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:orientation="vertical"
+                                        app:layout_constraintBottom_toBottomOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="1.0"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                                        app:layout_constraintVertical_bias="0.0">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="40dp"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:id="@+id/selectedPrice"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="8dp"
+                                                android:layout_marginEnd="8dp"
+                                                android:layout_marginBottom="8dp"
+                                                android:text="$23" />
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="center_vertical|end"
+                                                android:orientation="horizontal">
+
+                                                <androidx.cardview.widget.CardView
+                                                    android:layout_width="100dp"
+                                                    android:layout_height="35dp"
+                                                    android:layout_marginEnd="10dp"
+                                                    app:cardCornerRadius="20dp"
+                                                    app:cardElevation="3dp">
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:gravity="center"
+                                                        android:orientation="horizontal">
+
+                                                        <androidx.cardview.widget.CardView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            app:cardElevation="0dp">
+
+                                                            <ImageView
+                                                                android:id="@+id/decrease_item"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:onClick="decreaseInteger"
+                                                                android:src="@drawable/ic_minus" />
+                                                        </androidx.cardview.widget.CardView>
+
+                                                        <TextView
+                                                            android:id="@+id/quantity_item"
+                                                            android:layout_width="30dp"
+                                                            android:layout_height="30dp"
+                                                            android:gravity="center"
+                                                            android:text="0" />
+
+                                                        <androidx.cardview.widget.CardView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            app:cardElevation="0dp">
+
+                                                            <ImageView
+                                                                android:id="@+id/increase_item"
+                                                                android:layout_width="wrap_content"
+                                                                android:layout_height="wrap_content"
+                                                                android:onClick="increaseInteger"
+                                                                android:src="@drawable/ic_plus" />
+                                                        </androidx.cardview.widget.CardView>
+                                                    </LinearLayout>
+
+                                                </androidx.cardview.widget.CardView>
+                                            </LinearLayout>
+
+                                        </LinearLayout>
+
+                                    </RelativeLayout>
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                            <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0.5dp"-->
+                            <!--android:layout_marginTop="95dp"-->
+                            <!--android:background="@color/colorDarkGrey"-->
+                            <!--app:layout_constraintTop_toTopOf="parent"-->
+                            <!--tools:layout_editor_absoluteX="10dp" />-->
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="8dp">
+
+                        <TextView
+                            android:id="@+id/freshitems_text"
+                            android:layout_width="200dp"
+                            android:layout_height="25dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="Items from same restaurant"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/viewall1"
+                            android:layout_width="85dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:text="@string/view_all"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@+id/freshitems_text"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/freshitems_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#32A9A9A9">
+
+                        <TextView
+                            android:id="@+id/reviews_text"
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:gravity="center_vertical"
+                            android:text="Reviews"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/reviews_recycler_fresh_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
